@@ -11,14 +11,7 @@ export const Route = createFileRoute("/")({
 function LandingPage() {
   return (
     // TODO: Replace boilerplate.
-    <main
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        minHeight: "100vh",
-      }}
-    >
+    <main className="flex items-center justify-center h-screen">
       <section>TODO</section>
     </main>
   );

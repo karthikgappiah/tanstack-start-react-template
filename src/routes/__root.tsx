@@ -10,6 +10,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import type { ReactNode } from "react";
+import twcss from "../tailwind.css?url";
 
 export const Route = createRootRoute({
   head: () => ({
@@ -26,6 +27,7 @@ export const Route = createRootRoute({
         title: "TanStack Starter",
       },
     ],
+    links: [{ rel: "stylesheet", href: twcss }],
   }),
   component: RootComponent,
 });
@@ -44,8 +46,7 @@ function RootDocument({ children }: Readonly<{ children: ReactNode }>) {
       <head>
         <HeadContent />
       </head>
-      {/* TODO: Create normalize.css or reset.css to remove default styling */}
-      <body style={{ margin: 0 }}>
+      <body>
         {children}
         <Scripts />
       </body>

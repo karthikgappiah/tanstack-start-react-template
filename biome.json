@@ -13,7 +13,10 @@
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true
+      "recommended": true,
+      "nursery": {
+        "useSortedClasses": "error"
+      }
     }
   },
   "assist": {
@@ -27,5 +30,10 @@
   "formatter": {
     "enabled": true,
     "indentStyle": "space"
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
   }
 }
