@@ -1,0 +1,19 @@
+/**
+ * PATH: $REPO/tsconfig.json
+ */
+
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+
+    "moduleResolution": "bundler",
+    // WARNING: verbatimModuleSyntax is disabled to prevent server bundles from leaking into client bundles.
+    "verbatimModuleSyntax": false,
+
+    // Best practices
+    "strict": true,
+    "skipLibCheck": true,
+  },
+}
