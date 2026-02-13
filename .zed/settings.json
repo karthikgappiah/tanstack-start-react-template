@@ -1,0 +1,28 @@
+/**
+ * PATH: $REPO/.zed/settings.json
+ *
+ * EXTENSION ID:
+ * - [biome](https://github.com/biomejs/biome-zed)
+ */
+
+{
+  "languages": {
+    "JSON": { "formatter": { "language_server": { "name": "biome" } } },
+    "JSONC": { "formatter": { "language_server": { "name": "biome" } } },
+    "TypeScript": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "TSX": {
+      "formatter": { "language_server": { "name": "biome" } },
+      "code_actions_on_format": {
+        "source.fixAll.biome": true,
+        "source.organizeImports.biome": true
+      }
+    },
+    "CSS": { "formatter": { "language_server": { "name": "biome" } } }
+  }
+}
