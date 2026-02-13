@@ -2,6 +2,10 @@
 # PATH: $REPO/.gitignore
 ################################################################################
 
+# --- Package Management ---
+
+node_modules/
+
 # --- System Files ---
 
 .DS_Store
